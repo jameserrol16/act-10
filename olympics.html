@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+
+    
+    <style>
+         .navbar-custom {
+            background-color: #2C3E50;      
+        }
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-nav .nav-link {
+            color: #FFFFFF; 
+            font-family: Arial, sans-serif; 
+        }
+        .navbar-brand img {
+            max-width: 50%; 
+            height: 50%; 
+            margin-right: 1000px; 
+        }
+        .custom-logo {
+            max-width: 15%; 
+            height: 50%; 
+            margin-right: 300px;
+            margin-left: 100px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+            grid-column-gap: 100px;
+            grid-row-gap: 10px; 
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .card {
+            margin-top: 100px; 
+        }
+        .card-link {
+            color: black;
+            text-decoration: none; 
+            transition: color 0.3s;
+        }
+        .card-link:hover {
+            color: blue; 
+        }
+        .local-news {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: blue;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            color: white;
+        }
+        .card {
+            width: 70%; 
+            margin: auto; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+        .card-body {
+            padding: 1rem;
+        }
+        body {
+            padding-top: 80px; 
+        }
+        .modal-dialog {
+            max-width: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: transparent;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .modal-img {
+            width: 90%;
+            max-width: 90%;
+        }
+        .modal-close-btn {
+            position: absolute;
+            top: 1px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <img src="logo.png" alt="Logo" class="custom-logo">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                 Main Page
+            </a>
+            <a class="navbar-brand" href="showbiz.html">
+                Showbiz
+           </a>
+           <a class="navbar-brand" href="reference.html">
+            Reference
+       </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Local News
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="sub.html">Jinggoy Estrada</a></li>
+                            <li><a class="dropdown-item" href="jinggoy.html">Bongbong Marcos</a></li>
+                            <li><a class="dropdown-item" href="usmissile.html">US missile</a></li>
+                            <a class="dropdown-item" href="white.html">West Philippine Sea</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Weather Forecast
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="weather2.html">Amid rains</a></li>
+                            <li><a class="dropdown-item" href="weather1.html">El Nino</a></li>
+                            <li><a class="dropdown-item" href="weather3.html">Possible Thunderstorms</a></li>
+                        </ul>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <h2>LIST: Filipino athletes who qualified for the 2024 Paris Olympics<br>
+                    MAR 12, 2024 9:31 PM PHT<br>
+                    JR ISAGA</h6>
+                <div class="card">
+                    <img src="olympics.webp" class="card-img-top" alt="..." id="enlargeImage">
+                    <div class="card-body">
+                        <h5 style="color: grey;">With the 2024 Olympics just a few months away, take a look at which athletes have already punched their tickets to Paris as part of the growing Philippine delegation
+                            MANILA, Philippines – The clock is ticking for the world’s best athletes to punch their tickets to the 2024 Paris Olympics, and so far, the Philippines is on track to once again be well-represented in the top quadrennial multi-sport showpiece.
+                            
+                            Several Filipino standouts have already qualified to fly the flag in Paris, with many more in the wings waiting for their shot at ultimate sporting glory.
+                            
+                            The Philippines will have a lot to prove in the 2024 Olympics after a historic 2021 run in Tokyo, where living legend Hidilyn Diaz won the country’s first-ever gold through a masterful weightlifting display.
+                            
+                            Additionally, the 19-strong Filipino delegation also secured the nation’s biggest medal haul ever in a single Olympics, with Diaz’s gold topping a big four-medal tally, boosted by two silvers and one bronze from boxers Carlo Paalam, Nesthy Petecio, and Eumir Marcial, respectively.</h5><br><br>
+                        <p class="card-text">
+                            EJ Obiena
+First on the list is one of the Philippines’ best hopes for a 2024 Olympics medal, pole vaulting superstar EJ Obiena.
+
+Ranked No. 2 in the world just behind reigning Olympic champion Mondo Duplantis, the 28-year-old is looking to capitalize on a monumental 2023 season highlighted by notching a new personal and Asian record 6-meter jump on June 10, 2023 and an early Paris qualification on July 3, 2023.
+                        </p><br>
+                    
+
+                        <p class="card-text">
+                            <img src="carlos.jfif" class="card-img-top" alt="..." id="enlargeImage"><br><br>
+                            <h5 style="color: grey;"> 
+
+                                Carlos Yulo
+Looking to prove doubters wrong after a controversial split with his old coach, artistic gymnastics phenom Carlos Yulo punched his Olympic ticket on October 1, 2023, and has continuously trained to perfect his craft just in time for Paris.
+
+At just 24 years old, the two-time world champion, six-time Asian champion, and nine-time Southeast Asian (SEA) Games champion is gunning for his first Olympic gold, particularly in his floor exercise pet event. 
+                        </p><br>
+                            <hr>
+                            <br>
+                            Aleah Finnegan
+Prior to even stepping foot in Paris, Aleah Finnegan is already a history maker for Philippine gymnastics, as her qualification on October 3, 2023, marked the first time a Filipina gymnast qualified for the Olympics since 1964.
+
+Only representing the Philippines for two years so far since her 2022 SEA Games debut, the 21-year-old prodigy is out to make herself a household name with a stellar Olympics debut, and perhaps, win even more hearts with her first medal.<br><br>
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="modal-close-btn" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                <div class="modal-body">
+                    <img src="bongbong.png" class="modal-img" alt="Enlarged image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center text-lg-start mt-4 ">
+    
+
+        <div class="text-center p-3 bg-dark text-white">
+            @Maloria News. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

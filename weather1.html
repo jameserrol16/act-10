@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+
+    
+    <style>
+         .navbar-custom {
+            background-color: #2C3E50;      
+        }
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-nav .nav-link {
+            color: #FFFFFF; 
+            font-family: Arial, sans-serif; 
+        }
+        .navbar-brand img {
+            max-width: 50%; 
+            height: 50%; 
+            margin-right: 1000px; 
+        }
+        .custom-logo {
+            max-width: 15%; 
+            height: 50%; 
+            margin-right: 300px;
+            margin-left: 100px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+            grid-column-gap: 100px;
+            grid-row-gap: 10px; 
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .card {
+            margin-top: 100px; 
+        }
+        .card-link {
+            color: black;
+            text-decoration: none; 
+            transition: color 0.3s;
+        }
+        .card-link:hover {
+            color: blue; 
+        }
+        .local-news {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: blue;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            color: white;
+        }
+        .card {
+            width: 70%; 
+            margin: auto; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+        .card-body {
+            padding: 1rem;
+        }
+        body {
+            padding-top: 80px; 
+        }
+        .modal-dialog {
+            max-width: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: transparent;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .modal-img {
+            width: 90%;
+            max-width: 90%;
+        }
+        .modal-close-btn {
+            position: absolute;
+            top: 1px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <img src="logo.png" alt="Logo" class="custom-logo">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                 Main Page
+            </a>
+            <a class="navbar-brand" href="showbiz.html">
+                Showbiz
+           </a>
+           <a class="navbar-brand" href="reference.html">
+            Reference
+       </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Local News
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="sub.html">Jinggoy Estrada</a></li>
+                            <li><a class="dropdown-item" href="jinggoy.html">Bongbong Marcos</a></li>
+                            <li><a class="dropdown-item" href="usmissile.html">US missile</a></li>
+                            <a class="dropdown-item" href="white.html">West Philippine Sea</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Weather Forecast
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="weather2.html">Amid rains</a></li>
+                            <li><a class="dropdown-item" href="weather1.html">El Nino</a></li>
+                            <li><a class="dropdown-item" href="weather3.html">Possible Thunderstorms</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Showbiz
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="miles.html">Elijah and Miles</a></li>
+                            <li><a class="dropdown-item" href="tj.html">Tj Monterde</a></li>
+                            <li><a class="dropdown-item" href="rosmar.html">Diwata Pares Overload</a></li>
+                            <li><a class="dropdown-item" href="alden.html">Kathryn and Alden</a></li>
+                        </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sports
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pba.html">PBA</a></li>
+                            <li><a class="dropdown-item" href="volleyball.html">Volleyball</a></li>
+                            <li><a class="dropdown-item" href="olympics.html">Olympics 2024 Paris</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <h2>May 2024 ENSO update: we’re 10!</h2>
+                <h6>BY EMILY BECKER
+                    PUBLISHED MAY 9, 2024
+                    COMMENTS: 13</h6>
+                <div class="card">
+                    <img src="elnino.jpg" class="card-img-top" alt="..." id="enlargeImage">
+                    <div class="card-body">
+                        <h5 style="color: grey;">El Niño weakened substantially over the past month, and we think a transition to neutral conditions is imminent. There’s a 69% chance that La Niña will develop by July–September (and nearly 50-50 odds by June-August). Let’s kick off the ENSO Blog’s tin anniversary with our 121st ENSO outlook update!</h5><br><br>
+                        <p class="card-text">
+                            <h2>Hang 10</h2><br>
+                            There was some discussion this week amongst our ENSO forecast team about whether El Niño, much weakened already early last month, is still present. El Niño is a coupled system, meaning the ocean and atmosphere both exhibit characteristic changes. The atmospheric half of El Niño is harder to detect this month; most of the standard equatorial Pacific atmospheric indicators (rain and clouds over the tropical Pacific, trade winds and upper-level winds) were pretty close to average.
+
+However, the April average sea surface temperature in the tropical Pacific was still 0.8 °C above average according to the ERSSTv5 dataset (average = 1991–2020). The latest weekly measurement, which comes from the OISSTv2 dataset, was 0.5 °C above average. Given that the El Niño threshold is 0.5 °C, the team decided we’re right on the edge of the transition to neutral conditions.  We also can’t rule out some lingering El Niño impacts in other regions of the world. 
+                        </p><br>
+                    
+
+                        <p class="card-text">
+                            <img src="enso.gif" class="card-img-top" alt="..." id="enlargeImage"><br><br>
+                            <h5 style="color: grey;"> Animation of maps of sea surface temperatures in the Pacific Ocean compared to the long-term average over five-day periods from April through early May 2024. El Niño’s warm surface has weakening and a region of cooler-than-average sea surface temperature has appeared. NOAA Climate.gov, based on Coral Reef Watch maps available from <a href="https://www.nnvl.noaa.gov/view/#SSTA" target="_blank" class="card-link" style="color: blue;">NOAA View.</a></h5>
+                        </p><br>
+                            <hr>
+                            <br>
+                            Once this El Niño ends, it's likely that our spell of neutral conditions won’t be a long one, with La Niña expected to develop by the late summer and last through the early winter at least.<br><br>
+                            <img src="cpc.png" style="height: 100%; width: 100%;" alt="..." id="enlargeImage"><br>
+                            <h5 style="color: grey;"> NOAA Climate Prediction Center forecast for each of the three possible ENSO categories for the next 8 overlapping 3-month seasons. Blue bars show the chances of La Niña, gray bars the chances for neutral, and red bars the chances for El Niño. Graph by Michelle L'Heureux.</a></h5><br>
+                            <hr><br>
+                            We’ve seen a quick switch from El Niño to La Niña several times before in our 1950–present record, especially after a strong El Niño. This tendency is one source of confidence in the prediction that La Niña will develop later this year.<br><br>
+                            <img src="blog.png" class="card-img-top" alt="..." id="enlargeImage"><br>
+                            <h5 style="color: grey;">2-year history of sea surface temperatures in the Niño-3.4 region of the tropical Pacific for all strong El Niño events since 1950 (gray lines) and the current event (purple line). Graph by Emily Becker based on monthly Niño-3.4 index data<a href="https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/ensostuff/detrend.nino34.ascii.txt" target="_blank" class="card-link" style="color: blue;"> from CPC </a>using<a href="https://www.ncei.noaa.gov/products/extended-reconstructed-sst" target="_blank" class="card-link" style="color: blue;">ERSSTv5.</a></h5><br>
+                            <hr><br>
+                            Other factors that provide confidence that La Niña is on the way include forecasts from <a href="https://iri.columbia.edu/our-expertise/climate/forecasts/enso/current/?enso_tab=enso-sst_table" target="_blank" class="card-link" style="color: blue;">computer climate models </a>and cooler-than-average water<a href="https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_update/wkxzteq.shtml" target="_blank" class="card-link" style="color: blue;">under the surface</a>of the tropical Pacific.
+                            <br>
+                            <br>
+                            <h2>10-count</h2>
+<br>
+Even if the sea surface temperature in the tropical Pacific lingers near the El Niño threshold for a few weeks, it’s unlikely that there will be noticeable El Niño impacts on global climate conditions this coming summer. Nat looked at how the winter turned out in the US in <a href="https://www.climate.gov/news-features/blogs/enso/how-much-did-el-nino-influence-precipitation-over-united-states-past" target="_blank" class="card-link" style="color: blue;">his recent post</a>, but El Niño causes changes in rain and temperature patterns all around the world, with related impacts on drought, food supplies, and flooding. You can look at El Niño and La Niña’s global patterns of temperature and rain/snow throughout the seasons<a href="https://www.cpc.ncep.noaa.gov/products/precip/CWlink/ENSO/regressions/" target="_blank" class="card-link" style="color: blue;">here</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="modal-close-btn" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                <div class="modal-body">
+                    <img src="elnino.jpg" class="modal-img" alt="Enlarged image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('enlargeImage').addEventListener('click', function () {
+            var imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+            imageModal.show();
+        });
+    </script>
+</body>
+</html>

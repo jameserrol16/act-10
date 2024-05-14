@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+
+    
+    <style>
+         .navbar-custom {
+            background-color: #2C3E50;      
+        }
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-nav .nav-link {
+            color: #FFFFFF; 
+            font-family: Arial, sans-serif; 
+        }
+        .navbar-brand img {
+            max-width: 50%; 
+            height: 50%; 
+            margin-right: 1000px; 
+        }
+        .custom-logo {
+            max-width: 15%; 
+            height: 50%; 
+            margin-right: 300px;
+            margin-left: 100px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+            grid-column-gap: 100px;
+            grid-row-gap: 10px; 
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .card {
+            margin-top: 100px; 
+        }
+        .card-link {
+            color: black;
+            text-decoration: none; 
+            transition: color 0.3s;
+        }
+        .card-link:hover {
+            color: blue; 
+        }
+        .local-news {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: blue;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            color: white;
+        }
+        .card {
+            width: 70%; 
+            margin: auto; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+        .card-body {
+            padding: 1rem;
+        }
+        body {
+            padding-top: 80px; 
+        }
+        .modal-dialog {
+            max-width: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: transparent;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .modal-img {
+            width: 90%;
+            max-width: 90%;
+        }
+        .modal-close-btn {
+            position: absolute;
+            top: 1px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <img src="logo.png" alt="Logo" class="custom-logo">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                 Main Page
+            </a>
+            <a class="navbar-brand" href="showbiz.html">
+                Showbiz
+           </a>
+           <a class="navbar-brand" href="reference.html">
+            Reference
+       </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Local News
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="sub.html">Jinggoy Estrada</a></li>
+                            <li><a class="dropdown-item" href="jinggoy.html">Bongbong Marcos</a></li>
+                            <li><a class="dropdown-item" href="usmissile.html">US missile</a></li>
+                            <a class="dropdown-item" href="white.html">West Philippine Sea</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Weather Forecast
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="weather2.html">Amid rains</a></li>
+                            <li><a class="dropdown-item" href="weather1.html">El Nino</a></li>
+                            <li><a class="dropdown-item" href="weather3.html">Possible Thunderstorms</a></li>
+                        </ul>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <h2>PBA schedule: Do-or-die for TNT, Rain or Shine, San Miguel, and Terrafirma
+                    <br>May 14, 2024
+                </h6>
+                <div class="card">
+                    <img src="pba.jfif" class="card-img-top" alt="..." id="enlargeImage">
+                    <div class="card-body">
+                        <h5 style="color: grey;">Two slots have been filled for the PBA Season 48 Philippine Cup semifinals, with two more to go.</h5><br><br>
+                        <p class="card-text">
+                            Two slots have been filled for the PBA Season 48 Philippine Cup semifinals, with two more to go.
+ 
+
+On Wednesday, the second matchup following Ginebra vs. Meralco will be set, with a chance to either have a fresh pairing or feature another rivalry showdown.
+ 
+
+In the first game at 4:30 p.m. from the Ninoy Aquino Stadium, Terrafirma looks to extend its fairy-tale run all the way to the semifinals, where no Dyip team have gone before.
+ 
+
+Yes, by winning a seventh game in the Philippine Cup and a first playoff game in franchise history, this Terrafirma team is basically the best ever.
+                        </p><br>
+                    
+
+                        <p class="card-text">
+                            <iframe src="https://www.youtube.com/watch?v=pDXcpUkihbc" title="Cloud cluster sa bahagi ng Mindanao, posibleng maging sama ng panahon | TV Patrol" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="width: 100%; aspect-ratio: 16/9;"></iframe>
+                            <h5 style="color: grey;"> Led by former top picks Stephen Holt and Isaac Go, alongside reliables Juam Tiongson and Javi Gomez de Liaño, this rag-tag Dyip squad look to become the latest no. 8 team to make an improbable trip to the Final Four.
+ 
+
+                                However, standing in their way are the mighty San Miguel Beermen, who despite being on a rare losing skid are still the standard by which all PBA teams are measured.
+                                 
+                                
+                                Before this uncharacteristic two-game slide, putting them on the ropes, San Miguel won 12 straight games dating back to the previous Commissioner’s Cup, which was unbelievably a franchise record.
+                                 
+                                
+                                The Beermen have the weapons, MVP June Mar Fajardo and CJ Perez lead the team’s vaunted “Death 15” If there’s one team to count on that can and will bounce back, it’s San Miguel.
+                                 
+                                
+                                In the second game at 7:30 p.m. TNT and Rain or Shine fight for the fourth and final semis seat after dragging each other to a knockout Game 3.
+                                 
+                                
+                                The Elasto Painters look to make their first PBA semifinals in five years, and coach Yeng Guiao has an array of players to use at his disposal.
+                                
+                                
+                        </p><br>
+                            <hr>
+                            <br>
+                            Led by former top picks Stephen Holt and Isaac Go, alongside reliables Juam Tiongson and Javi Gomez de Liaño, this rag-tag Dyip squad look to become the latest no. 8 team to make an improbable trip to the Final Four.
+ 
+
+However, standing in their way are the mighty San Miguel Beermen, who despite being on a rare losing skid are still the standard by which all PBA teams are measured.
+ 
+
+Before this uncharacteristic two-game slide, putting them on the ropes, San Miguel won 12 straight games dating back to the previous Commissioner’s Cup, which was unbelievably a franchise record.
+ 
+
+The Beermen have the weapons, MVP June Mar Fajardo and CJ Perez lead the team’s vaunted “Death 15” If there’s one team to count on that can and will bounce back, it’s San Miguel.
+ 
+
+In the second game at 7:30 p.m. TNT and Rain or Shine fight for the fourth and final semis seat after dragging each other to a knockout Game 3.
+ 
+
+The Elasto Painters look to make their first PBA semifinals in five years, and coach Yeng Guiao has an array of players to use at his disposal.<br><br>
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="modal-close-btn" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                <div class="modal-body">
+                    <img src="bongbong.png" class="modal-img" alt="Enlarged image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center text-lg-start mt-4 ">
+    
+
+        <div class="text-center p-3 bg-dark text-white">
+            @Maloria News. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

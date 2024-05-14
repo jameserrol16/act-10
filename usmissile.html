@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+
+    
+    <style>
+         .navbar-custom {
+            background-color: #2C3E50;      
+        }
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-nav .nav-link {
+            color: #FFFFFF; 
+            font-family: Arial, sans-serif; 
+        }
+        .navbar-brand img {
+            max-width: 50%; 
+            height: 50%; 
+            margin-right: 1000px; 
+        }
+        .custom-logo {
+            max-width: 15%; 
+            height: 50%; 
+            margin-right: 300px;
+            margin-left: 100px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+            grid-column-gap: 100px;
+            grid-row-gap: 10px; 
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .card {
+            margin-top: 100px; 
+        }
+        .card-link {
+            color: black;
+            text-decoration: none; 
+            transition: color 0.3s;
+        }
+        .card-link:hover {
+            color: blue; 
+        }
+        .local-news {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: blue;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            color: white;
+        }
+        .card {
+            width: 70%; 
+            margin: auto; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+        .card-body {
+            padding: 1rem;
+        }
+        body {
+            padding-top: 80px; 
+        }
+        .modal-dialog {
+            max-width: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: transparent;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .modal-img {
+            width: 90%;
+            max-width: 90%;
+        }
+        .modal-close-btn {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <img src="logo.png" alt="Logo" class="custom-logo">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                 Main Page
+            </a>
+            <a class="navbar-brand" href="showbiz.html">
+                Showbiz
+           </a>
+           <a class="navbar-brand" href="reference.html">
+            Reference
+       </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Local News
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="sub.html">Jinggoy Estrada</a></li>
+                            <li><a class="dropdown-item" href="jinggoy.html">Bongbong Marcos</a></li>
+                            <li><a class="dropdown-item" href="usmissile.html">US missile</a></li>
+                            <a class="dropdown-item" href="white.html">West Philippine Sea</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Weather Forecast
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="weather2.html">Amid rains</a></li>
+                            <li><a class="dropdown-item" href="weather1.html">El Nino</a></li>
+                            <li><a class="dropdown-item" href="weather3.html">Possible Thunderstorms</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Showbiz
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="miles.html">Elijah and Miles</a></li>
+                            <li><a class="dropdown-item" href="tj.html">Tj Monterde</a></li>
+                            <li><a class="dropdown-item" href="rosmar.html">Diwata Pares Overload</a></li>
+                            <li><a class="dropdown-item" href="alden.html">Kathryn and Alden</a></li>
+                        </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sports
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pba.html">PBA</a></li>
+                            <li><a class="dropdown-item" href="volleyball.html">Volleyball</a></li>
+                            <li><a class="dropdown-item" href="olympics.html">Olympics 2024 Paris</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <h2>New US missile system ‘Typhon’ debuts in PH but fixed deployment unsurek</h2>
+                <h6>By: <a href="https://globalnation.inquirer.net/byline/frances-mangosing" target="_blank" class="card-link" style="color: blue;">Frances Mangosing </a>- Reporter / @FMangosingINQPhilippine Daily Inquirer / 05:39 PM May 13, 2024</h6>
+                <div class="card">
+                    <img src="broombroom.png" class="card-img-top" alt="..." id="enlargeImage">
+                    <div class="card-body">
+                        <h5 style="color: grey;">Mid-Range Capability (MRC) Launcher newly developed by the US Army and used in exercises with the Philippine military. CONTRIBUTED PHOTO BY CAPT. RYAN DEBOOY US ARMY</h5><br><br>
+                        <p class="card-text">
+                            OAHU —The United States has no plans yet to permanently station in the Philippines a new missile system, which saw action in recent large-scale military exercises between US and Philippine forces in Philippine areas that are near Taiwan, according to a senior US defense official.
+                            <br>
+                            <br>
+The US Army has developed a new ground-based Mid-Range Capability (MRC) system that could launch Tomahawk and SM-6 missiles. It is called Typhon.
+The system debuted in northern Philippines in April during two consecutive military exercises between the US and Philippine armed forces. The system is still there, but whether it will stay is uncertain.
+<br>
+<br>
+“There’s currently no plans to station any US forces in the Philippines…to include the MRC,” said the senior official. The US defense department routinely withholds the names of officials giving background briefings.
+<br>
+<br>
+The official gave a background briefing to Philippine journalists participating in a reporting tour at the Indo-Pacific Command (Indopacom) headquarters at Camp H.M. Smith here. Indopacom oversees US military operations in the region.
+“The plans are to continue to exercise with the Armed Forces of the Philippines and make sure the infrastructure is there for rotational forces that, if they’re invited by the Armed Forces of Philippines,” the senior US defense official said.
+“We’re always there at the invitation of the Philippines,” the official added but it is likely to be used again in the next phase of the military exercise Salaknib.
+Typhon was brought to Northern Luzon in mid-April for a series of large-scale military exercises between the Philippines and US. Where exactly Typhon was deployed was not disclosed.
+<br>
+<br>
+Photos showed, however, that the system was positioned at the Laoag International Airport in Ilocos Norte province and not in sites listed under the Enhanced Defense Cooperation Agreement (Edca) where US forces have access.
+The Laoag airport, though, could accommodate the C-17A Globemaster strategic air lifters of the US Air Force that were used to transport the system.
+<br>
+<br>
+“This landmark deployment marks a significant milestone for the new capability while enhancing interoperability, readiness, and defense capabilities in coordination with the Armed Forces of the Philippines,” the US Army said in April.
+<br>
+<br>
+Typhon’s deployment to the Philippines came in the wake of China’s escalating aggression in West Philippine Sea, which are waters inside the Philippines’ exclusive economic zone.
+<br>
+<br>
+Typhon’s deployment to Northern Philippines would put it within range of Taiwan, Chinese military outposts in South China Sea and even parts of the Chinese mainland.
+<br>
+<br>
+According to the US Army, Typhon is a land-based, ground-launcher system that enhances multi-domain fires. It consists of a battery operations center, four launchers, prime movers, and modified trailers.
+<br>
+<br>
+Tomahawk missiles are believed to have a range of more than 1,500 kilometers, while SM-6 has an operational range of more than 240 kilometers.
+<br>
+<br>
+China has protested the deployment of Typhon and accused the US of plotting to have “unilateral military advantage.”
+<br>
+<br>
+“The US move exacerbates tensions in the region and increases the risk of misjudgment and miscalculation,” the Chinese Foreign Ministry said last month.
+<br>
+<br>
+Beijing’s claim over nearly the entire South China Sea overlaps with those of the Philippines, Vietnam, Brunei, Malaysia and Taiwan. It has been invalided by a 2016 arbitral ruling, which China continues to view as trash.
+<br>
+<br>
+The Philippines and US on Friday capped the annual exercise Balikatan— touted as the “most complex” version yet — which ran from April 22 to May 10 in various parts of Luzon and involved 17,000 troops.
+<br>
+<br>
+Such exercises with allies and partners are a deterrent and help maintain peace and stability in the region, the US defense official said.
+<br>
+<br>
+“I think the goal of the posture is to make sure that the infrastructure is in place that can support US forces or, you know, coalition forces that may be needed if we want to execute the Mutual Defense Treaty,” he said, referring to the accord that binds the US and the Philippines to actively defend each other in the event of an armed attack on either.
+<br>
+<br>
+“Our one strength is the way we work with allies and partners,” said another US defense official at the Indopac briefing.
+<br>
+<br>
+“The PRC (People’s Republic of China) does work with militaries around the region, but I would say some of those, their relationship is not the same as the US,” the second official said.
+<br>
+<br>
+“We try to be more of a partnership with our allies versus a coercive relationship,” the official said.
+<br>
+<br>
+“The reason that we’re so successful in maintaining the peace and stability is not because it’s our own forces,” added the official.
+“It’s because of the work that we do with our allies and partners and the support that we receive. Because we’re all like-minded nations. We all want the same things,” he said.
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="modal-close-btn" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                <div class="modal-body">
+                    <img src="broombroom.png" class="modal-img" alt="Enlarged image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('enlargeImage').addEventListener('click', function () {
+            var imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+            imageModal.show();
+        });
+    </script>
+</body>
+</html>

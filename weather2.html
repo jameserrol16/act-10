@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+
+    
+    <style>
+         .navbar-custom {
+            background-color: #2C3E50;      
+        }
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-nav .nav-link {
+            color: #FFFFFF; 
+            font-family: Arial, sans-serif; 
+        }
+        .navbar-brand img {
+            max-width: 50%; 
+            height: 50%; 
+            margin-right: 1000px; 
+        }
+        .custom-logo {
+            max-width: 15%; 
+            height: 50%; 
+            margin-right: 300px;
+            margin-left: 100px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+            grid-column-gap: 100px;
+            grid-row-gap: 10px; 
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .card {
+            margin-top: 100px; 
+        }
+        .card-link {
+            color: black;
+            text-decoration: none; 
+            transition: color 0.3s;
+        }
+        .card-link:hover {
+            color: blue; 
+        }
+        .local-news {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: blue;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            color: white;
+        }
+        .card {
+            width: 70%; 
+            margin: auto; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+        .card-body {
+            padding: 1rem;
+        }
+        body {
+            padding-top: 80px; 
+        }
+        .modal-dialog {
+            max-width: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: transparent;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .modal-img {
+            width: 90%;
+            max-width: 90%;
+        }
+        .modal-close-btn {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <img src="logo.png" alt="Logo" class="custom-logo">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                 Main Page
+            </a>
+            <a class="navbar-brand" href="showbiz.html">
+                Showbiz
+           </a>
+           <a class="navbar-brand" href="reference.html">
+            Reference
+       </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Local News
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="sub.html">Jinggoy Estrada</a></li>
+                            <li><a class="dropdown-item" href="jinggoy.html">Bongbong Marcos</a></li>
+                            <li><a class="dropdown-item" href="usmissile.html">US missile</a></li>
+                            <a class="dropdown-item" href="white.html">West Philippine Sea</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Weather Forecast
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="weather2.html">Amid rains</a></li>
+                            <li><a class="dropdown-item" href="weather1.html">El Nino</a></li>
+                            <li><a class="dropdown-item" href="weather3.html">Possible Thunderstorms</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Showbiz
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="miles.html">Elijah and Miles</a></li>
+                            <li><a class="dropdown-item" href="tj.html">Tj Monterde</a></li>
+                            <li><a class="dropdown-item" href="rosmar.html">Diwata Pares Overload</a></li>
+                            <li><a class="dropdown-item" href="alden.html">Kathryn and Alden</a></li>
+                        </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sports
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pba.html">PBA</a></li>
+                            <li><a class="dropdown-item" href="volleyball.html">Volleyball</a></li>
+                            <li><a class="dropdown-item" href="olympics.html">Olympics 2024 Paris</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <h2>Pagasa: Temperatures dropping amid rains</h2>
+                <h6>By: <a href="https://www.philstar.com/authors/1807714/bella-cariaso" target="_blank" class="card-link" style="color: blue;">Bella Cariaso </a>- The Philippine Star
+                    May 13, 2024 | 12:00am</h6>
+                <div class="card">
+                    <img src="pagasa.jpg" class="card-img-top" alt="..." id="enlargeImage">
+                    <div class="card-body">
+                        <h5 style="color: grey;">Motorists and pedestrians are stranded due to a gutter-deep flood along the corner of Taft and UN Avenues in Manila following sudden downpour on May 9, 2024 afternoon.</h5><br><br>
+                        <p class="card-text">
+                            MANILA, Philippines — The Philippine Atmospheric, Geophysical and Astronomical Services Administration (PAGASA) yesterday reported a drop in the maximum temperatures in the country amid the thunderstorms experienced in many areas.
+
+In a radio interview, PAGASA weather specialist Daniel James Villamil said that rains are expected in certain parts of Visayas brought by the easterlies or wind from the Pacific Ocean.
+
+“If we compare the maximum temperature today and the past week, we can see that there was a drop (in the temperature) brought by the rains in the afternoon or the thunderstorm activities,” Villamil said.
+
+He added that the maximum actual temperature in Metro Manila could reach 33 degrees Celsius.
+
+“We can still expect a high heat index in Metro Manila between 42 and 43 degrees Celsius. We should still expect humid weather except for sudden downpours of rains brought by localized thunderstorms. Danger level heat index will still be experienced in certain areas,” Villamil pointed out.
+PAGASA, he said, expects one or two typhoons to enter the Philippine area of responsibility (PAR) this month.
+                            <br>
+                            <br>
+                            “Historically, there is a chance of one to two typhoons. But in the next three to five days, there is still less chance for typhoons as we have yet to monitor weather systems outside PAR,” Villamil said.
+
+Once a typhoon enters PAR, it will be named Aghon.
+
+Based on the PAGASA forecast, Laoag City in Ilocos Norte could experience a heat index of at least 46 degrees Celsius today. At the Ninoy Aquino International Airport (NAIA), the heat index could reach 43 degrees.
+
+Last Saturday, the highest heat index was recorded in Aparri, Cagayan at 46 degrees Celsius. The heat index at NAIA in Pasay City was at 42 degrees.
+<br>
+<br>
+Ana Liza Solis, PAGASA climate monitoring and prediction section chief, has said the worst is over in terms of the record-high temperatures and searing heat, with many areas in the country possibly experiencing thunderstorms in the second half of May.
+Solis said the hottest temperature for this year has been recorded after an actual temperature of 40.3 degrees Celsius was observed in Tarlac on April 27.
+
+Agriculture Assistant Secretary U-Nichols Manalo said that the Department of Agriculture is preparing for a “more destructive” La Niña, even as El Niño continues to affect the agriculture sector. Manalo added that the DA has started its La Niña preparations by looking into areas severely affected by La Niña in the past.
+<br>
+<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="modal-close-btn" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                <div class="modal-body">
+                    <img src="pagasa.jpg" class="modal-img" alt="Enlarged image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('enlargeImage').addEventListener('click', function () {
+            var imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+            imageModal.show();
+        });
+    </script>
+</body>
+</html>

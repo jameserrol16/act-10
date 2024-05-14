@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <style>
+        /* Change navbar background color */
+        .navbar-custom {
+            background-color: #2C3E50; /* You can use any color code or name here */
+        }
+
+        /* Change navbar text color and font */
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-nav .nav-link {
+            color: #FFFFFF; /* Text color */
+            font-family: Arial, sans-serif; /* Font style */
+        }
+
+        /* Adjust logo size */
+        .navbar-brand img {
+            max-width: 50%; /* Set the maximum width for the logo */
+            height: 50%; /* Allow the height to adjust based on the width */
+            margin-right: 1000px; /* Optional: Add margin to separate logo from text */
+        }
+
+        /* Custom styling for the image */
+        .custom-logo {
+            max-width: 15%; /* Set the maximum width for the logo */
+            height: 50%; /* Allow the height to adjust based on the width */
+            margin-right: 300px;
+            margin-left: 100px;
+        }
+
+        /* Adjust carousel height */
+        .carousel {
+            height: 500px; /* Set the height of the carousel */
+            width: 50%;
+            margin-top: 200px;
+            margin-left: 500px;
+        }
+
+        /* Resize carousel images */
+        .carousel-item img {
+            height: 500px; /* Set the height of the images within carousel items */
+            object-fit: cover; /* Ensure images cover the entire carousel item */
+        }
+
+        /* Center text in the body */
+        body {
+            text-align: center;
+        }
+
+        .card-body{
+          text-align: center;
+          
+        }
+
+        .container{
+            margin-left: 300px;
+            margin-top: 10px;
+        }
+.col{
+    margin-top:200px;
+    
+}
+.l{
+    margin-top:10px;
+}
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <img src="logo.png" alt="Logo" class="custom-logo">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                 Main Page
+            </a>
+            <a class="navbar-brand" href="showbiz.html">
+                Showbiz
+           </a>
+           <a class="navbar-brand" href="reference.html">
+            Reference
+       </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Local News
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="sub.html">Jinggoy Estrada</a></li>
+                            <li><a class="dropdown-item" href="jinggoy.html">Bongbong Marcos</a></li>
+                            <li><a class="dropdown-item" href="usmissile.html">US missile</a></li>
+                            <a class="dropdown-item" href="white.html">West Philippine Sea</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Weather Forecast
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="weather2.html">Amid rains</a></li>
+                            <li><a class="dropdown-item" href="weather1.html">El Nino</a></li>
+                            <li><a class="dropdown-item" href="weather3.html">Possible Thunderstorms</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Showbiz
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="alden.html">Kathryn and Alden</a></li>
+                            <li><a class="dropdown-item" href="miles.html">Elijah and Miles</a></li>
+                            <li><a class="dropdown-item" href="tj.html">Tj Monterde</a></li>
+                            <li><a class="dropdown-item" href="rosmar.html">Diwata Pares Overload</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sports
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pba.html">PBA</a></li>
+                            <li><a class="dropdown-item" href="volleyball.html">Volleyball</a></li>
+                            <li><a class="dropdown-item" href="olympics.html">Olympics 2024 Paris</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="col">
+        <h4>May 9, 2024</h4>
+        <h1>Kathryn Bernardo and Alden Richards have been named Box Office Queen and King</h1>
+    </div>
+    <div class="l">
+        <div id="carousel1" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="alden.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="kathryn.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="rich.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <br>
+        <a href="alden.html" target="_blank" >
+  Kathryn Bernardo and Alden Richards have been named Box Office Queen and King, respectively, at the 52nd Box Office Entertainment Awards.
+  <br>Kathryn received the Box Office Queen award for her most recent film, A Very Good Girl, while Alden received the Box Office King award for his film Five Breakups and A Romance.
+  <br><br>PHOTO/S: SPARKLE GMA ARTIST CENTER INSTAGRAM/SCREENGRAB @TWITTER
+</a>
+
+          
+    </div>
+
+
+    
+
+
+    <div class="col">
+        <h4>May 9, 2024</h4>
+        <h1>Elijah Canlas (left) on relationship status with ex-girlfriend Miles Ocampo (right): "We're doing good. We're very happy... We're taking it easy."</h1>
+    </div>
+    <div class="l">
+        <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="miles.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- Caption content for slide 1 -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="miles1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- Caption content for slide 2 -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="miles3.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- Caption content for slide 3 -->
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel2"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel2"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <br>
+    <a href="miles.html" target="_blank" >Elijah Canlas (left) on relationship status with ex-girlfriend Miles Ocampo (right): "We’re doing good. We’re very happy... We’re taking it easy." 
+    <br><Br>PHOTO/S: KHRYZZTINE JOY BAYLON/ELIJAH CANLAS INSTAGRAM</a>
+</div>
+
+<div class="col">
+    <h4>May 9, 2024</h4>
+    <h1>TJ Monterde elated to share the stage with Queen of Tears OST singer 10CM</h1>
+</div>
+<div class="l">
+    <div id="carousel3" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="tj.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <!-- Caption content for slide 1 -->
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="tj1.jfif" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <!-- Caption content for slide 2 -->
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="tj2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <!-- Caption content for slide 3 -->
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel3"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel3"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<br>
+<a href="miles.html" target="_blank" >TJ Monterde is grateful for the success of his two-night concert: "We sold out day one in less than 24 hours... Sa tamang panahon, dadating din ang para sa yo.” 
+<br><Br>PHOTO/S: REISHA ESPINO</a>
+</div>
+
+<div class="col">
+    <h4>May 9, 2024</h4>
+    <h1>Rosmar Tan gifts Diwata PHP5M-worth of cash, house and lot</h1>
+</div>
+<div class="l">
+    <div id="carousel4" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="rosmar.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <!-- Caption content for slide 1 -->
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="rosmar1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <!-- Caption content for slide 2 -->
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="rosmar2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <!-- Caption content for slide 3 -->
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel4"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel4"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<Br><a href="miles.html" target="_blank" >Businesswoman Rosmar Tan (left) surprises Diwata with gifts such as PHP1 million cash, house and lot, and many more. Rosmar mentioned that her gifts to Diwata is PHP5 million in total. 
+    <Br><Br>PHOTO/S: ROSMAR YOUTUBE</a>
+</div>
+
+<footer class="bg-dark text-white text-center text-lg-start mt-4 ">
+    
+
+    <div class="text-center p-3 bg-dark text-white">
+        @Maloria News. All rights reserved.
+    </div>
+</footer>
+    
+    
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

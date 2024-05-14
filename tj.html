@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+
+    
+    <style>
+         .navbar-custom {
+            background-color: #2C3E50;      
+        }
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-nav .nav-link {
+            color: #FFFFFF; 
+            font-family: Arial, sans-serif; 
+        }
+        .navbar-brand img {
+            max-width: 50%; 
+            height: 50%; 
+            margin-right: 1000px; 
+        }
+        .custom-logo {
+            max-width: 15%; 
+            height: 50%; 
+            margin-right: 300px;
+            margin-left: 100px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+            grid-column-gap: 100px;
+            grid-row-gap: 10px; 
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .card {
+            margin-top: 100px; 
+        }
+        .card-link {
+            color: black;
+            text-decoration: none; 
+            transition: color 0.3s;
+        }
+        .card-link:hover {
+            color: blue; 
+        }
+        .local-news {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: blue;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            color: white;
+        }
+        .card {
+            width: 70%; 
+            margin: auto; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+        .card-body {
+            padding: 1rem;
+        }
+        body {
+            padding-top: 80px; 
+        }
+        .modal-dialog {
+            max-width: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: transparent;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .modal-img {
+            width: 90%;
+            max-width: 90%;
+        }
+        .modal-close-btn {
+            position: absolute;
+            top: 1px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <img src="logo.png" alt="Logo" class="custom-logo">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                 Main Page
+            </a>
+            <a class="navbar-brand" href="showbiz.html">
+                Showbiz
+           </a>
+           <a class="navbar-brand" href="reference.html">
+            Reference
+       </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Local News
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="sub.html">Jinggoy Estrada</a></li>
+                            <li><a class="dropdown-item" href="jinggoy.html">Bongbong Marcos</a></li>
+                            <li><a class="dropdown-item" href="usmissile.html">US missile</a></li>
+                            <a class="dropdown-item" href="white.html">West Philippine Sea</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Weather Forecast
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="weather2.html">Amid rains</a></li>
+                            <li><a class="dropdown-item" href="weather1.html">El Nino</a></li>
+                            <li><a class="dropdown-item" href="weather3.html">Possible Thunderstorms</a></li>
+                        </ul>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <h2>TJ Monterde elated to share the stage with Queen of Tears OST singer 10CM</h2>
+                    <br><h8>"Si Lord yon, walang iba. Siya yung nag-orchestrate non."<br>
+by
+Reisha Espino
+PUBLISHED 5 DAYS AGO
+                </h6>
+                <div class="card">
+                    <img src="tj.jpeg" class="card-img-top" alt="..." id="enlargeImage">
+                    <div class="card-body">
+                        <h5 style="color: grey;">TJ Monterde is grateful for the success of his two-night concert: "We sold out day one in less than 24 hours... Sa tamang panahon, dadating din ang para sa yo.” PHOTO/S: REISHA ESPINO   </h5><br><br>
+                        <p class="card-text">
+                            TJ Monterde delighted his fans with an unexpected guest appearance during his sold-out two-night concert, Sariling Mundo, held on May 5 and 6, 2024, at the New Frontier Theater in Quezon City.
+
+The OPM balladeer surprised the audience by bringing out South Korean singer-songwriter 10cm, known for his song "Tell Me It's Not A Dream" featured on the hit K-drama series Queen of Tears. 
+                        </p><br>
+                    
+
+                        <p class="card-text">
+                            <img src="tjj.jpeg" class="card-img-top" alt="..." id="enlargeImage"><br><br>
+                            <h5 style="color: grey;"> Even on the concert's second night, TJ remained on cloud nine, grateful for the opportunity to share the stage with the Korean artist.
+
+                                Speaking to PEP.ph (Philippine Entertainment Portal) and other members of the press, TJ shared his excitement about collaborating with 10cm.
+                                
+                                "Yung kay 10cm hindi ko talaga ma-explain yon kasi he's an artist that I've been listening to since 2017, 2018.
+                                
+                                "Tapos lagi akong nakikinig ng music niya, he introduced me to K-ballads. I listen to K-ballads because of him.
+                                
+                                "Nagko-comment ako sa mga live niya ganon tapos bigla niya akong minessage last year... Nag-message yung team niya na, '10cm heard your song online, he love it.'
+                                
+                                "And I was like, 'What? Paano nangyari yon?' So with 10cm, it's the hand of God. Yun yung mga ganong pangyayari na sure ako si Lord na yung gumawa ng paraan.
+                                
+                                "Kasi impossible talaga yon na sa dinami ng artist sa buong mundo kanta ko yung mapapakinggan niya, di ba?
+                                
+                                "So what are the chances. So yung reaction ko doon is si Lord yon, walang iba. Siya yung nag-orchestrate non." 
+                        </p><br>
+                            <hr>
+                            <br>
+                            TJ MONTERDE: GRATEFUL
+Having 10cm at his concert was one of the most memorable moments for TJ, and he had plenty more during the second night of the show.
+
+TJ opened his concert with performances of "Sariling Mundo" and "Tulad Mo," followed by sharing stories about his songs and those he wished he had written first.
+
+He recounted the origin of his song "Puhon," meaning "In God's time" in Bisaya, and related it with how the concert came to be.
+
+Initially skeptical about the concert's potential success, TJ confessed that it was the persuasion of his management, Cornerstone Entertainment, and his wife, KZ Tandingan, that ultimately convinced him to proceed.<br><br>
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="modal-close-btn" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                <div class="modal-body">
+                    <img src="bongbong.png" class="modal-img" alt="Enlarged image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center text-lg-start mt-4 ">
+    
+
+        <div class="text-center p-3 bg-dark text-white">
+            @Maloria News. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
